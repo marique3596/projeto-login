@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <main>
@@ -16,8 +17,27 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja Bem-Vindo(a) Novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-                <form action="login.php" method="post">
-                    
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <input type="email" name="login" id="ilogin" placeholder="Seu Email" autocomplete="on" required max-length="30">
+                        <label for="ilogin">Login</label>
+                        <span class="material-symbols-outlined">
+                            mail
+                            </span>
+                    </div>
+                    <div class="campo">
+                        <input type="password" name="Senha" id="isenha" placeholder="Sua Senha" autocomplete="current-password" minlength="8" required maxlength="20">
+                        <label for="isenha">Senha</label>
+                        <span class="material-symbols-outlined">
+                            lock
+                            </span>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="material-icons">
+                        Esqueci a Senha <span class="material-symbols-outlined">
+                            help
+                            </span>
+                    </a>
                 </form>
             </div>
         </section>
